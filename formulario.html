@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="./css/formulario.css">
+</head>
+<body>
+    <header class="header">
+        <section class="logo">
+            <img src="./img/logo.jpg" alt="Logo Musica">
+        </section>
+        <nav>
+            <ul class="navlinks">
+                <li><a href="#" class="navhome">Home</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Ranking</a></li>
+                <li><a href="#">Contacto</a></li> 
+            </ul>
+        </nav>
+        <a href="#" class="boton"><button>Login</button></a>
+    </header>
+
+    <main>
+        <form action="#" method="get">  <!-- get por que no está funcionando. si no deberia ir post?-->
+            <fieldset>
+                <section class="datosPersonales">
+                    <legend>Datos Personales</legend>
+                    <section id="sectionName">
+                        <label for="name">Nombre: </label>
+                        <input type="text" id="name" name="name" required>
+                    </section>
+
+                    <section id="sectionLastname">
+                        <label for="lastname">Apellido: </label>
+                        <input type="text" id="lastname" name="lastname" required>
+                    </section>
+
+                    <section id="sectionDate">
+                        <label for="date">Fecha de Nacimiento:</label>
+                        <input type="date" id="date" name="date" min="1910-01-01" max="2023-01-01" required>
+                    </section>
+
+                    <section id="sectionEmail">
+                        <label for="email">Correo Electronico: </label>
+                        <input type="email" name="email" id="email" placeholder="ej.:juancarlo@mail.com" required>
+                    </section>
+                </section>
+            </fieldset>
+
+
+            <fieldset>
+                <section class="datosMotivos">
+                    <legend>Sobre el contacto</legend>
+                    <section id="sectionReason">
+                        <label for="reason">Motivo del contacto</label>
+                        <select name="reason" id="reason">
+                            <option value="report">Bug/Error</option>
+                            <option value="collab">Colaborar</option>
+                            <option value="complaint">Quejas</option>
+                            <option value="other" selected>Otros</option>
+                        </select>
+                    </section>
+                    <section id="sectionComments">
+                        <label for="comments">Expanda sus motivos del contacto: </label>
+                        <textarea name="comments" id="comments" cols="21" rows="6"></textarea>
+                    </section>
+                </section>
+            </fieldset>
+            <section class="botones">
+                <button type="reset">Reiniciar</button>
+                <button type="submit">Enviar</button>
+            </section>
+        </form>
+    </main> 
+</body>
+</html>
+
