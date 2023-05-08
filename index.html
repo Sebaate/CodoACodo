@@ -1,56 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
+	 <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>SearchBND</title>
+    <title>MusiNoti</title>
     <link href="style.css" rel="stylesheet" type="text/css">
 
     
 </head>
 <body>
- <!--  header , titulo y barra de busqueda
-   -->
-  <header>
+<!-- HEADER -->
+<header class="header">
+    <section class="logo">
+        <img src="./img/logo.jpg" alt="Logo Musica">
+    </section>
+    <nav>
+        <ul class="navlinks">
+            <li><a href="#" class="navhome">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Ranking</a></li>
+            <li><a href="#">Contacto</a></li> 
+        </ul>
+    </nav>
+    
+    <a href="#" class="boton"><button>Login</button></a>
 
-    <section id="header_div">
+</header>
 
-     
-        <h3 id="perfil">Perfil</h3>
+<section id="section_titulo">
+  <h1 id="titulo">MusiNoti</h1>
+</section>
+
+<section id="section_barra_busqueda">
+  <input type="search" name="barra_busqueda" id="barra_busqueda" placeholder=" Buscar Banda">
   
-        <h3 id="ranking">Ranking</h3>
- 
-        <h3 id="noticias">Noticias</h3>
-      
+</section>
+
+<section id="noticias">
+
+    <section class="contenedor">
+
+        <img src="img/fotonoticia.png" alt="fotonoticia" class="columna1">
+        <img src="img/fotonoticia.png" alt="fotonoticia" class="columna1">
     </section>
 
-  </header>
-  <h1 id="titulo">SearchBND</h1>
-  <fieldset id="fieldset_buscar_banda">
-    <label id="label_buscar_banda">
-      <form action="text" id="form_buscar_banda">
-      <textarea name="buscarBanda" id="buscar_banda" cols="50" rows="1" placeholder="Buscar Banda"></textarea>
-      </form>
-    </label>
-  </fieldset>
 
-  <!-- termina header , titulo y barra de busqueda
-   -->
-
- <!-- Elementos destacados, 4 items 
-   -->
-
-   <section id="cuadro_items">
-      <section id="cuadrado1">
-
-      </section>
-      <section id="cuadrado2">
-
-      </section>
-   </section>
-
-
-
+    <section class="contenedor">
+        <img src="img/fotonoticia.png" alt="fotonoticia" class="columna2">
+        <img src="img/fotonoticia.png" alt="fotonoticia" class="columna2">
+    </section>
+</section>
 </body>
 </html>
-
